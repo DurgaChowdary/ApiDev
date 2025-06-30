@@ -5,9 +5,9 @@ const port = 2300;
 app.use(express.json()); // Middleware for parsing JSON
 
 
-// Routes
-const Router = require('./routes/users');
-app.use('routes/users', Router);
+// App Routes
+const PetRouter = require('./routes/pets');
+app.use('/api/pets', PetRouter);
 
 
 
